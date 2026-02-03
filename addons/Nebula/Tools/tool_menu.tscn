@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://doqb86s5puorg"]
+
+[node name="ToolMenu" type="PopupMenu" unique_id=177371854]
+oversampling_override = 1.0
+visible = true
+unfocusable = true

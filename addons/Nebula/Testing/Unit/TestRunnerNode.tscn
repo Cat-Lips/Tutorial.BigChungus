@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://ch4xh8l23eqls"]
+
+[ext_resource type="Script" uid="uid://doj1f781y20o" path="res://addons/Nebula/Testing/Unit/TestRunnerNode.cs" id="1_runner"]
+
+[node name="TestRunnerNode" type="Node" unique_id=1001087811]
+script = ExtResource("1_runner")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b7aipjhgy073f"]
+
+[ext_resource type="Script" uid="uid://btkvj0w41s0wc" path="res://Tutorial/Game/Scoring/ScoreManager.cs" id="1_2jb8g"]
+
+[node name="Scoring" type="Node" unique_id=2055275677]
+script = ExtResource("1_2jb8g")

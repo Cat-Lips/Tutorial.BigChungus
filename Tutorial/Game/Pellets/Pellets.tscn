@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bin5omglhrmwr"]
+
+[ext_resource type="Texture2D" uid="uid://qdykd041uk0x" path="res://Assets/icon.svg" id="1_a2wth"]
+[ext_resource type="Script" uid="uid://cufensbqicdgj" path="res://Tutorial/Game/Pellets/Pellets.cs" id="1_lu2he"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lu2he"]
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_a2wth")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pu8wy"]
+material = SubResource("StandardMaterial3D_lu2he")
+size = Vector2(1, 1)
+
+[sub_resource type="MultiMesh" id="MultiMesh_etaxl"]
+transform_format = 1
+use_colors = true
+mesh = SubResource("PlaneMesh_pu8wy")
+
+[node name="Pellets" type="Node" unique_id=1864472202]
+script = ExtResource("1_lu2he")
+
+[node name="MultiMesh" type="MultiMeshInstance3D" parent="." unique_id=1926291091]
+multimesh = SubResource("MultiMesh_etaxl")

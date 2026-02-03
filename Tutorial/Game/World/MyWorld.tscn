@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://caxm4ixuhayf"]
+
+[ext_resource type="Script" uid="uid://bn6iegmpw7506" path="res://Tutorial/Game/World/MyWorld.cs" id="1_3t4in"]
+[ext_resource type="PackedScene" uid="uid://bii2p2xn36jbx" path="res://Tutorial/Utils/ENV.tscn" id="2_jouoi"]
+[ext_resource type="PackedScene" uid="uid://dvu83otalperd" path="res://Tutorial/Game/UI/UI.tscn" id="2_nwgkt"]
+[ext_resource type="PackedScene" uid="uid://drtrmxga1vxaj" path="res://Tutorial/Game/RPC.tscn" id="3_bdhj4"]
+[ext_resource type="PackedScene" uid="uid://coctfaiup66t2" path="res://Tutorial/Game/World/BG/BG.tscn" id="3_m3h7i"]
+[ext_resource type="PackedScene" uid="uid://bin5omglhrmwr" path="res://Tutorial/Game/Pellets/Pellets.tscn" id="6_jouoi"]
+[ext_resource type="PackedScene" uid="uid://b7aipjhgy073f" path="res://Tutorial/Game/Scoring/ScoreManager.tscn" id="7_m3h7i"]
+
+[node name="World" type="Node3D" unique_id=179672661]
+script = ExtResource("1_3t4in")
+
+[node name="UI" parent="." unique_id=2032935562 instance=ExtResource("2_nwgkt")]
+
+[node name="BG" parent="." unique_id=1465931457 instance=ExtResource("3_m3h7i")]
+
+[node name="ENV" parent="." unique_id=168667324 instance=ExtResource("2_jouoi")]
+
+[node name="RPC" parent="." unique_id=1387619870 instance=ExtResource("3_bdhj4")]
+
+[node name="Pellets" parent="." unique_id=1864472202 instance=ExtResource("6_jouoi")]
+
+[node name="Scoring" parent="." unique_id=2055275677 instance=ExtResource("7_m3h7i")]

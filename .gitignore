@@ -1,0 +1,11 @@
+/.vs
+#/.godot
+/.export
+
+/Assets
+
+*.log
+*.csproj.*
+
+/.godot/*
+!/.godot/uid_cache.bin
