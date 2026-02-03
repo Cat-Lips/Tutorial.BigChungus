@@ -1,0 +1,69 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[Nebula]
+
+config/log_level=4
+world/default_scene="uid://caxm4ixuhayf"
+
+[application]
+
+config/name="Big Chungus"
+config/description="https://nebula.heavenlode.com/index.html"
+run/main_scene="res://Tutorial/Main.tscn"
+config/features=PackedStringArray("4.6", "C#")
+config/icon="res://Assets/icon.svg"
+
+[autoload]
+
+Debugger="*uid://2oavajx24j8k"
+Env="*uid://bh3xc265mkd33"
+NetRunner="*uid://b0a0q7ty0fc08"
+Utils="*uid://bc8qivs3ehho2"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="Big Chungus"
+
+[editor]
+
+naming/scene_name_casing=1
+naming/script_name_casing=1
+import/use_multiple_threads=false
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/F00F/plugin.cfg", "res://addons/Nebula/plugin.cfg")
+
+[filesystem]
+
+import/blender/enabled=false
+import/fbx/enabled=false
+
+[input_devices]
+
+buffering/agile_event_flushing=true
+
+[physics]
+
+2d/run_on_separate_thread=true
+3d/run_on_separate_thread=true
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true

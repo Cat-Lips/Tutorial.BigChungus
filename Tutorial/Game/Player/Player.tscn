@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dgxodsvbadddc"]
+
+[ext_resource type="Script" uid="uid://bqvosxbi7mejv" path="res://Tutorial/Game/Player/Player.cs" id="1_uh8bt"]
+[ext_resource type="Script" uid="uid://cew2utsco5a6y" path="res://Tutorial/Game/Player/PlayerController.cs" id="2_454jo"]
+[ext_resource type="Script" uid="uid://b2eyg65ebknbg" path="res://addons/Nebula/Core/Nodes/NetTransform/NetTransform3D.cs" id="3_0h3ov"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_pvjh4"]
+
+[node name="Player" type="Node" unique_id=914698667]
+script = ExtResource("1_uh8bt")
+
+[node name="Model" type="MeshInstance3D" parent="." unique_id=165987306]
+mesh = SubResource("BoxMesh_pvjh4")
+
+[node name="Controller" type="Node3D" parent="." unique_id=247876944]
+script = ExtResource("2_454jo")
+
+[node name="NetTransform" type="Node3D" parent="." unique_id=787028793 node_paths=PackedStringArray("SourceNode", "TargetNode")]
+script = ExtResource("3_0h3ov")
+SourceNode = NodePath("../Controller")
+TargetNode = NodePath("../Model")
+VisualInterpolateSpeed = 10.0
+NetPositionPredictionTolerance = 0.5
+metadata/_custom_type_script = "uid://b2eyg65ebknbg"

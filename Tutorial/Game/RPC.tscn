@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://drtrmxga1vxaj"]
+
+[ext_resource type="Script" uid="uid://c14st55v7byoc" path="res://Tutorial/Game/RPC.cs" id="1_3ybv2"]
+
+[node name="RPC" type="Node" unique_id=1387619870]
+script = ExtResource("1_3ybv2")

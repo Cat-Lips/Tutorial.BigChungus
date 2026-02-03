@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dnspsrys5swet"]
+
+[ext_resource type="PackedScene" uid="uid://c18ded3drxmoq" path="res://addons/Nebula/Utils/ServerClientConnector/default_server_client_connector.tscn" id="1_n16fh"]
+
+[node name="DefaultServerClientConnector" unique_id=1559193245 instance=ExtResource("1_n16fh")]
